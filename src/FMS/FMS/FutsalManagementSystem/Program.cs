@@ -22,9 +22,12 @@ namespace FutsalManagementSystem
         }
         private static void TestDB()
         {
-            SQLiteDatabaseService sqLite = new SQLiteDatabaseService("D:\\Projects\\FutsalManagementSystem\\src\\FMS\\FMS\\DataAccessLayer\\resources\\testDB.db");
+            string dbPath = @"D:\\Projects\\FutsalManagementSystem\\src\\FMS\\FMS\\DataAccessLayer\\resources\\testDB.db";
+            IDBConnectionService sqLite = new SQLiteDatabaseService(dbPath);
             var sqConn = sqLite.GetConnection();
-            sqLite.DeleteAndCloseConnection();
+            IDBHelper dBHelper = new DatabaseHelper(sqConn);
+            dBHelper.CreateDatabase(dbPath);
+
         }
     }
 }

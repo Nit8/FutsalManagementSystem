@@ -8,12 +8,13 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class SQLiteDatabaseService
+    public class SQLiteDatabaseService : IDBConnectionService
     {
         public string ConnectionString { get; set; }
         public string dbPath { get; }
 
         private SQLiteConnection _sqLiteConnection;
+        private DbTransaction _dbTransaction;
 
         public SQLiteConnection sqLiteConnection
         {
@@ -28,7 +29,15 @@ namespace DataAccessLayer
 
         public DbTransaction BeginTransaction()
         {
-            throw new NotImplementedException();
+            try
+            {
+                _dbTransaction = GetConnection().BeginTransaction();
+            }
+            catch (Exception)
+            {
+                //Log
+            } 
+            return _dbTransaction;
         }
 
         public void CreateAndOpenConnection()
