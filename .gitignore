@@ -163,3 +163,4 @@ cython_debug/
 .vs/
 src/**/bin/
 src/**/obj/
+src/**/packages/
