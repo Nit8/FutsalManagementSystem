@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutsalManagementSystem", "FutsalManagementSystem\FutsalManagementSystem.csproj", "{CC0038B0-5687-4BD3-9E8B-9E545A721E58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{2F0D8058-EFCD-469E-BEA8-301CA4050FFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC0038B0-5687-4BD3-9E8B-9E545A721E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0038B0-5687-4BD3-9E8B-9E545A721E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0038B0-5687-4BD3-9E8B-9E545A721E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0038B0-5687-4BD3-9E8B-9E545A721E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F0D8058-EFCD-469E-BEA8-301CA4050FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F0D8058-EFCD-469E-BEA8-301CA4050FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F0D8058-EFCD-469E-BEA8-301CA4050FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F0D8058-EFCD-469E-BEA8-301CA4050FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43E94E6F-F411-4357-B599-C67137F656F5}
+	EndGlobalSection
+EndGlobal
